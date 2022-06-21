@@ -1,128 +1,119 @@
-
-
-.header {
+body.active {
+    @media (max-width:992px) {
+        padding: 0;
+        background: #EDF2F5;
+        .main-content__clone{
+            display: none;
+        }
+    }
 }
-.conteiner__header {
-    @media (max-width:1200px){
 
-    }
-    @media (max-width:992px){
-        
-    }
-    @media (max-width:767px){
+header {
+
+    @media (max-width:992px) {
         .header__bureger {
             display: block;
+
             position: absolute;
-            top:  40%;
+            top: 8vh;
             width: 50px;
             height: 30px;
-            right: 50px;
+            right: 10vw;
             z-index: 3;
-            &::before,&::after{
+
+            &::before,
+            &::after {
                 content: "";
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: rgb(255, 255, 255 );
+                background-color: rgb(255, 255, 255);
                 transition: all 0.3s ease 0s;
             }
-            &::before{
-                top: 0;            
-            }
-            &::after{
-                bottom: 0;              
-            }
-            
 
-            .header__bureger-span{
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+
+            .header__bureger-span {
                 position: absolute;
                 top: 14px;
                 width: 100%;
                 height: 2px;
-                background-color: rgb(255, 255, 255 );
+                background-color: rgb(255, 255, 255);
                 transition: all 0.3s ease 0s;
             }
-            
-        } 
-        .header__bureger.active{
-            
+
+        }
+
+        .header__bureger.active {
+
             &::before {
                 top: 50%;
-                transform: rotate(45deg);            
+                transform: rotate(45deg);
             }
+
             &::after {
                 bottom: 50%;
-                transform: rotate(-45deg);             
+                transform: rotate(-45deg);
             }
-            .header__bureger-span {                
+
+            .header__bureger-span {
                 transform: scale(0);
             }
         }
-        .content__nav{
+
+        .nav-link__nav {
             display: none;
         }
-        .conteiner__content.active{
+
+        .nav-link.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            z-index: 1;
             width: 100%;
             height: 100%;
-            overflow: auto;
-            transition: all  0.3s ease-out 0s;
-            
-            background: rgba(0, 170, 238, 0.1);
-            .content__nav{
+            background: #EDF2F5;
+
+            // background: rgba(0, 170, 238, 0.1);
+
+            .nav-link__nav {
                 display: block;
             }
-            .content__menu{
-                
+
+            .nav-link__content {
                 display: flex;
                 flex-direction: column;
-                margin: 10px 0px 10px 0px;
-                
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+                height: 100%;
+
             }
-            .menu-link{
+
+            .nav-link__content-li {
                 font-size: 24px;
                 margin: 10px 0px 10px 0px;
                 transition: font-size 0.1s ease-out 0s;
-                &:hover{
-                    
+
+                &:hover {
+
                     font-size: 26px;
                 }
             }
         }
 
-    } 
-    @media (max-width:500px) {
+        .contact-information {
+            display: none;
+        }
 
-    } 
+    }
 }
-// .wallpaper {
-// }
-// .title {
-// }
-// .title__tekst-heder {
-// }
-// .title__tekst {
-// }
-// .conteiner__content {
-// }
-// .header__content {
-// }
-// .header__bureger {
-// }
-// .content__title-tekst {
-// }
-// .content__nav {
-// }
-// .content__menu {
-// }
-// .menu-link {
-// }
-
-
-
-
-
-
-
-
-
-
