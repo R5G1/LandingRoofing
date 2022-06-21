@@ -215,9 +215,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     background: #EDF2F5;
   }
-  body.active .main-content__clone {
-    display: none;
-  }
 }
 
 @media (max-width: 992px) {
