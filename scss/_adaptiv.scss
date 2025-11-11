@@ -1,0 +1,156 @@
+body {
+
+    @media (max-width:992px) {
+
+        header {
+
+            .conteiner {}
+
+            .nav-link {
+                &__line {
+                    display: none;
+                }
+            }
+
+        }
+
+        //!===============================================================================
+        .contact-information {
+
+            .conteiner {
+                display: flex;
+                justify-content: center;
+                margin-top: 3vh;
+            }
+
+            &__story {
+                display: none;
+            }
+
+            &__story-content {
+                display: none;
+            }
+
+            &__price {
+                display: none;
+            }
+
+            &__messenders {
+
+                display: none;
+            }
+
+            &__logo {}
+
+            &__logo-img {
+                margin-top: 0;
+                width: 95px;
+                height: 72px;
+            }
+
+            &__contact {
+                max-width: 40vw;
+
+                p {
+                    font-style: 9px;
+                }
+            }
+
+            &__contact-tel {
+                font-size: 14px;
+                margin: 1.5vh 0;
+            }
+
+            &__contact-link-tel {
+                font-style: 10px;
+            }
+
+        }
+
+        //!===============================================================================
+
+        .main-content {
+            .conteiner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                text-align: center;
+            }
+
+            &__left-column-conteiner {
+                display: none;
+            }
+
+            &__company-informations {
+                margin-left: 0;
+            }
+
+            &__company-informations-text {
+                font-size: 18px;
+                line-height: 30px;
+                width: 70vw;
+            }
+
+            &__company-informations-text-before {
+                font-size: 14px;
+                line-height: 10px;
+
+
+                &::before {
+                    content: '';
+                    position: relative;
+                    padding-right: 16vw;
+                    background: url('/img/main-content/Круги.svg') center center no-repeat;
+                }
+            }
+
+            &__btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+            }
+
+            &__price,
+            &__record {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 1vh 0;
+                height: 6vh;
+                width: 60vw;
+
+                P {
+                    max-width: 52vw;
+                }
+            }
+
+            &__footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            &__footer-text {
+                text-align: center;
+                min-width: 35vw;
+            }
+
+            &__clone{
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width:768px) {}
+
+    @media (max-width:520px) {}
+
+    @media (max-width:420px) {}
+
+}
